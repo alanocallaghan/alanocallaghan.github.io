@@ -28,6 +28,19 @@ theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      layout: default
+      author: Alan O'Callaghan
+    scope:
+      path: ""
+      type: post
+    values:
+      permalink: /posts/:title
+      author: Alan O'Callaghan
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
