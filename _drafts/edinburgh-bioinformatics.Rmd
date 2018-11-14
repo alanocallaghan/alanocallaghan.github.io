@@ -1,0 +1,42 @@
+---
+output:
+  html_document:
+    theme: null
+    highlight: null
+#?title:  "plotlyutils: A plotly extension"
+#?date:   2018-11-13 16:09:18 +0000
+#? categories: ["programming", "data visualisation"]
+---
+
+
+
+I am just trying to write a fucking blog post Chrome, for fuck's sake!
+
+```{r}
+suppressPackageStartupMessages({
+    library("SummarizedExperiment")
+    library("limma")
+})
+
+if (!require("plotlyutils")) {
+    install_github("Alanocallaghan/plotlyutils")
+}
+library(plotlyutils)
+
+pcs <- prcomp(t(voomed_GBM$E))
+pc_data <- pcs$x
+
+columns <- c(
+    "subtype_IDH.status",
+    "subtype_Age..years.at.diagnosis.",
+    "subtype_Gender",
+    "subtype_Pan.Glioma.RNA.Expression.Cluster",
+    "ethnicity"
+)
+colours <- colData(GBMdata)[, columns, drop = FALSE]
+colours <- as.data.frame(colours)
+colours$TotalReads <- colSums(assay(GBMdata))
+
+
+selectable_scatter_plot(pc_data, colours)
+```

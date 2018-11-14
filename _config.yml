@@ -24,6 +24,7 @@ github_username:  alanocallaghan
 
 # Build settings
 markdown: kramdown
+markdown_ext: md
 theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed

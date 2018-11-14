@@ -4,8 +4,6 @@ date:   2018-11-11 16:09:18 +0000
 categories: personal
 ---
 
-# Dulce Et Decorum Est
-
 I feel it is appropriate for the first post on a personal site to be a 
 personal one. Today is Remembrance Day, and the 100<sup>th</sup> anniversary of 
 the end of the first world war. On my way about my business 

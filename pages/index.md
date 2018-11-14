@@ -18,5 +18,7 @@ statistics and personal topics.
 
 # Blog posts <a href="feed.xml"><span><img width="15" height="15" src="/assets/img/RSS.png"></span></a>
 {% for post in site.posts %}
-- [{{post.title}}]({{post.url}}) ({{post.date | date: "%d %B %Y"}}) - {{post.categories | array_to_sentence_string}}
+{% if post.ext == ".md" %}
+- [{{post.title}}]({{post.url}}) ({{post.date | date: "%d %B %Y"}}) - *{{post.categories | array_to_sentence_string}}*
+{% endif %}
 {% endfor %}
