@@ -154,11 +154,11 @@ MDS = $(RMDS:.Rmd=.md)
 
 all: $(MDS)
 ```
-The `.PHONY` declaration tells us that `all` isn't a target in the sense 
+The `.PHONY` declaration tells us that `all` isn't a "real" target in the sense 
 that the rule won't build a file or folder called `all`. We define `RMDS`,
 which is a list of all local `.Rmd` files, we replace the files extensions
 in this list with `.md`,  and then we declare these (possibly non-existent)
-`.md` files as dependencies of the `all` rule. This means that when we type
+`.md` files as dependencies of the `all` target. This means that when we type
 `all`, any `.Rmd` files will be built into `.md` if and only if they have been 
 modified more recently than the corresponding `.md` files have been.
 
