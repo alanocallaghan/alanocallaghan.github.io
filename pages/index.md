@@ -15,10 +15,22 @@ statistics and personal topics.
 {% endif %}
 {% endfor %}
 
+# Package sites
+- [heatmaplyExamples](https://alanocallaghan.github.io/heatmaplyExamples/): 
+    *vignettes demonstrating the utility of 
+    [heatmaply](https://github.com/talgalili/heatmaply) for various applications*
+- [plotlyvignettes](https://alanocallaghan.github.io/plotlyvignettes):
+    *vignettes relating to my 
+    [plotlyutils](https://github.com/Alanocallaghan/plotlyutils) 
+    package. Was used as the basis for a talk at an 
+    [Edinburgh Bioinformatics](http://www.bioinformatics.ed.ac.uk/) meeting
+    (2018-11-08)*.
 
-# Blog posts <a href="feed.xml"><span><img width="15" height="15" src="/assets/img/RSS.png"></span></a>
+
+# Blog posts {%include RSS.html %}
 {% for post in site.posts %}
 {% if post.ext == ".md" %}
 - [{{post.title}}]({{post.url}}) ({{post.date | date: "%d %B %Y"}}) - *{{post.categories | array_to_sentence_string}}*
 {% endif %}
 {% endfor %}
+
