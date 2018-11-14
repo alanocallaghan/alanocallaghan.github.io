@@ -1,6 +1,6 @@
 ---
 title:  "Jekyll and Rmarkdown (the wrong way)"
-date:   2018-11-13 16:09:18 +0000
+date:   2018-11-14 16:35:40 +0000
 categories: ["programming", "data visualisation"]
 ---
 
@@ -82,7 +82,7 @@ how we build our dependency into our target:
 This renders `$<`, our dependency `%.Rmd` to a `.html` file 
 (think `foo.Rmd` to `foo.html`) -- great! All we have to do is ensure we 
 have set our output format in the YAML front matter of the Rmarkdown file:
-```
+```yaml
 ---
 output:
   html_document
@@ -92,14 +92,14 @@ Since Jekyll will print this HTML directly within our layout template,
 we can define a rule to "convert" this directly into a markdown file
 using `$<` and `$@`, where `$@` refers to the 
 target:
-```
+```bash
 %.md: %.html
     mv $< $@
 ```
 ...right? Not so fast. This is a *fully* self-contained HTML file, so it 
 includes things like the `DOCTYPE` declaration, which will show up in the 
 rendered Jekyll page unless we do something about it! `grep` to the rescue:
-```
+```bash
 %.md: %.html
     cat $< | grep -v DOCTYPE > $@
 ```
@@ -116,7 +116,7 @@ file. I know what you're thinking. *"Inventing your own comment format? For a
 single use case?"* &nbsp; You're beginning to feel dirty. You haven't seen a house of cards like this 
 since House of Cards. But bear with me, because believe it or not, it gets 
 worse. First we need to extract our comments and print them to the target file:
-```
+```bash
 %.md: %.html
     cat "$(basename $<).Rmd" | fgrep '#?' | sed -re "s/#\?[ ]?*//g" > $@
 ```
@@ -128,10 +128,10 @@ finally we redirect the output to the target file.
 The astute among you may notice that this will *only* print these special
 comment lines. That's no good. We need the `---` lines to delimit the front matter
 along with all of our HTML for this to make any sense at all.
-So now, our final Makefile, which adds the first delimiter, then the comments,
+So now, our final rule, which adds the first delimiter, then the comments,
 then the second delimiter, and then the rest of the file excluding the DOCTYPE
 declaration:
-```
+```bash
 %.md: %.html
     echo "---" > $@ && \
         cat "$(basename $<).Rmd" | fgrep '#?' | sed -re "s/#\?[ ]?*//g" >> $@ && \
@@ -142,12 +142,32 @@ declaration:
     R --no-save -e 'rmarkdown::render("$<")'
 ```
 
+This is great, but it does mean that to build files, we have to specify them 
+directly (`make _drafts/foo.md`). What would be really cool is a rule to 
+figure out which markdown files should be generated, based on the 
+Rmarkdown files present. Something like:
+```bash
+.PHONY: all
+
+RMDS = $(shell find . -name "*.Rmd")
+MDS = $(RMDS:.Rmd=.md)
+
+all: $(MDS)
+```
+The `.PHONY` declaration tells us that `all` isn't a target in the sense 
+that the rule won't build a file or folder called `all`. We define `RMDS`,
+which is a list of all local `.Rmd` files, we replace the files extensions
+in this list with `.md`,  and then we declare these (possibly non-existent)
+`.md` files as dependencies of the `all` rule. This means that when we type
+`all`, any `.Rmd` files will be built into `.md` if and only if they have been 
+modified more recently than the corresponding `.md` files have been.
+
 # Listing pages
 So far, so good. Things might not be looking so rosy elsewhere, though.
 You probably have a page listing the posts and pages on your site (in my case,
 the index file) using some Liquid code that is pretty similar to this:
 {% raw %}
-```
+```liquid
 {% for post in site.posts %}
 - [{{post.title}}]({{post.url}})
 {% endfor %}
@@ -158,7 +178,7 @@ or not it can display them nicely. Since we don't want to display .Rmd files,
 we can just filter this list for only `.md` files:
 
 {% raw %}
-```
+```liquid
 {% for post in site.posts %}
 {% if post.ext == ".md" %}
 - [{{post.title}}]({{post.url}})
