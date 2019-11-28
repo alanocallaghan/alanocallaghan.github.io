@@ -1,0 +1,116 @@
+---
+output:
+  html_document:
+    theme: null
+    highlight: null
+#?title:  "Visualising data with R, htmlwidgets, and Javascript"
+#?date:   2019-11-28 16:09:18 +0000
+#? categories: ["programming", "data visualisation"]
+---
+
+A short while ago (read: about a year ago) I wrote 
+[a blog post]({%post_url 2018-11-14-jekyll-and-rmarkdown-the-wrong-way%}) about 
+using RMarkdown with Jekyll. The motivation behind that was this post,
+which I have decided to finally make!
+
+The reason I was keen to use RMarkdown and Jekyll in tandem was to be able
+to show off some [R htmlwidgets](http://www.htmlwidgets.org/). I think that this
+is one of the most useful frameworks available in R for communicating research
+findings, especially to non-technical collaborators. This framework allows
+package authors to interface R objects, via JSON, with arbitrary Javascript
+code and libraries. This allows one to create incredibly powerful interactive
+analysis and visualisation tools that can be divorced from the R terminal 
+(unlike Shiny, though they can also be used in tandem).
+
+I spoke about this at the 
+[local R meetup, Edinbr](http://edinbr.org/edinbr/2019/03/12/march-meeting.html),
+and also at the [Edinburgh Bioinformatics](https://www.bioinformatics.ed.ac.uk/)
+quarterly meeting, and it is something
+I feel rather strongly about. The ability to produce high quality, interactive 
+figures, tables and websites is a broadly useful skill and it is one that I 
+think is not given enough emphasis for early career researchers. It is also, 
+in my view, criminal that journals, charging inordinate amounts for the 
+privilege of being indexed on their website, generally do not facilitate these 
+tools. I think it's somewhat ludicrous that supplementary tables are dumped upon
+us as .xlsx files, for example.
+
+While I remember learning Javascript was an "interesting" experience, and
+certainly involved me expressing myself using colourful language 
+(doubly so for PHP), I think
+that it is a language that anyone involved in data analysis should learn. It
+is arguably the fundamental tool for building anything web-based.
+Being able to program in Javascript can
+help when visualising data, presenting your research or analysis on a web page,
+interacting with SQL, and more.
+As proof of this, I'll show off a couple of htmlwidgets that I think can
+facilitate exploration of research findings in a way that static visualisations
+are not capable of.
+
+The first is a htmlwidget that takes scatter plots to "the next level" if
+I may be so pretentious. I developed it in my [plotlyutils](https://github.com/Alanocallaghan/plotlyutils)
+package (currently just on github, though I may push it to CRAN eventually). 
+It allows the user to select which variable to plot
+on the x and y axes, and which variable should control the colour of the points.
+This allows a non-technical user to explore the relationships between
+the variables within an arbitrarily complex dataset. In my experience, it is
+useful even for technical users, as it reduces the number of permutations
+of commands to be entered in the console.
+
+```{r}
+suppressPackageStartupMessages({
+    library("SummarizedExperiment")
+    library("limma")
+    library("devtools")
+})
+
+if (!require("plotlyutils")) {
+    install_github("Alanocallaghan/plotlyutils")
+}
+library("plotlyutils")
+
+pcs <- prcomp(t(voomed_GBM$E))
+pc_data <- pcs$x
+
+columns <- c(
+    "subtype_IDH.status",
+    "subtype_Age..years.at.diagnosis.",
+    "subtype_Gender",
+    "subtype_Pan.Glioma.RNA.Expression.Cluster",
+    "ethnicity"
+)
+colours <- colData(GBMdata)[, columns, drop = FALSE]
+colours <- as.data.frame(colours)
+colours$TotalReads <- colSums(assay(GBMdata))
+
+
+selectable_scatter_plot(pc_data, colours)
+```
+
+The second example is the excellent [qtlcharts package](https://github.com/kbroman/qtlcharts)
+created by Karl Broman. This package is a collection of very interesting 
+htmlwidgets that uses the [d3](https://d3js.org/) Javascript library to 
+visualise complex data relating to biological systems, with a particular focus
+on [quantitative trait loci](https://en.wikipedia.org/wiki/Quantitative_trait_locus).
+This example shows a gene-gene correlation heatmap. Clicking on a cell shows
+a gene-gene expression scatterplot with groups.
+This is a remarkable amount of data presented in an elegant way, and would 
+require many hundreds of pairwise plots to accomplish using purely static 
+figures.
+
+```{r}
+if (!require("qtlcharts")) {
+    install.packages("qtlcharts")
+}
+library("qtlcharts")
+data("geneExpr")
+iplotCorr(geneExpr$expr, geneExpr$genotype)
+```
+
+My advice for someone wanting to learn these web skills
+would be to dig into existing Javascript figures or programs, whether they 
+use [d3](https://d3js.org/), [plotly](https://plot.ly/), 
+[Highcharts](https://www.highcharts.com) or anything else. Picking apart an 
+existing program to make it do something new is an effective way of learning 
+basic syntax. You can then take it to the next step and design your own 
+programs. This is probably not the optimal way to learn, but it is certainly
+an effective and quick one, and to me, that is generally enough.

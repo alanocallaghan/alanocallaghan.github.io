@@ -8,7 +8,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
-    chronic (0.10.2)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -199,8 +198,6 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
       ruby_dep (~> 1.2)
     mercenary (0.3.6)
-    midnight (0.0.1.pre)
-      chronic (= 0.10.2)
     mini_portile2 (2.4.0)
     minima (2.5.0)
       jekyll (~> 3.5)
@@ -247,8 +244,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 198)
   jekyll-feed (~> 0.6)
-  midnight
-  tzinfo-data
+  minima
+  rouge
 
 BUNDLED WITH
-   1.16.5
+   2.0.2

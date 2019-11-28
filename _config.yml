@@ -18,16 +18,17 @@ email: alan.ocallaghan@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   The ramblings of Alan O'Callaghan
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://alanocallaghan.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AlanBOCallaghan
 github_username:  alanocallaghan
 
 # Build settings
 markdown: kramdown
 markdown_ext: md
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
+highlighter: rouge
 
 defaults:
   - 
