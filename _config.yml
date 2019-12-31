@@ -39,7 +39,7 @@ defaults:
       author: Alan O'Callaghan
     scope:
       path: ""
-      type: post
+      type: posts
     values:
       permalink: /posts/:title
       author: Alan O'Callaghan
