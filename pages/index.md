@@ -15,6 +15,14 @@ statistics and personal topics.
 {% endif %}
 {% endfor %}
 
+
+# Blog posts {%include RSS.html %}
+{% for post in site.posts %}
+{% if post.ext == ".md" %}
+- [{{post.title}}]({{post.url}}) ({{post.date | date: "%d %B %Y"}}) - *{{post.categories | array_to_sentence_string}}*
+{% endif %}
+{% endfor %}
+
 # Package sites
 - [heatmaplyExamples](https://alanocallaghan.github.io/heatmaplyExamples/): 
     *vignettes demonstrating the utility of 
@@ -25,12 +33,3 @@ statistics and personal topics.
     package. Was used as the basis for a talk at an 
     [Edinburgh Bioinformatics](http://www.bioinformatics.ed.ac.uk/) meeting
     (2018-11-08)*.
-
-
-# Blog posts {%include RSS.html %}
-{% for post in site.posts %}
-{% if post.ext == ".md" %}
-- [{{post.title}}]({{post.url}}) ({{post.date | date: "%d %B %Y"}}) - *{{post.categories | array_to_sentence_string}}*
-{% endif %}
-{% endfor %}
-
