@@ -37,7 +37,7 @@ categories: ["stats", "Bayes by dummies"]
 
 
 
-<p><a href="https://stats.stackexchange.com/questions/446912/is-there-a-model-to-predict-mortality-rate-of-an-ongoing-epidemic/446923">A recent post</a> on CrossValidated interested me, so I wrote a bit of an explainer on how one might model the mortality rate of a disease. I ended up writing a bit of an essay by mistake, so I’m reposting it here for posterity. Also, I’ve only gotten two votes for a post that took 30 minuts or so, while I got 6 on StackOverflow for copy/pasting an R help page in 10 seconds, so I’m a little bit salty.</p>
+<p><a href="https://stats.stackexchange.com/questions/446912/is-there-a-model-to-predict-mortality-rate-of-an-ongoing-epidemic/446923">A recent post</a> on CrossValidated interested me, so I wrote a bit of an explainer on how one might model the mortality rate of a disease. I ended up writing a bit of an essay by mistake, so I’m reposting it here for posterity. Also, I’ve only gotten two votes for a post that took 30 minutes or so, while I got 6 on StackOverflow for copy/pasting an R help page in 10 seconds, so I’m a little bit salty.</p>
 <p>They asked:</p>
 <blockquote>
 <p>Following the recent Coronavirus outbreak, various mortality rates have been published.<br />
