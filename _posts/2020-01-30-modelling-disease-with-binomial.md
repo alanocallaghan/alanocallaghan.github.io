@@ -1,7 +1,7 @@
 ---
 title:  "Modelling disease mortality"
 date:   2020-01-30 10:00:00 +0000
-categories: ["stats", "bayes by dummies"]
+categories: ["stats", "Bayes by dummies"]
 ---
 
 <html>

@@ -5,7 +5,7 @@ output:
     highlight: null
 #?title:  "Modelling disease mortality"
 #?date:   2020-01-30 10:00:00 +0000
-#? categories: ["stats", "bayes by dummies"]
+#? categories: ["stats", "Bayes by dummies"]
 ---
 
 [A recent post](https://stats.stackexchange.com/questions/446912/is-there-a-model-to-predict-mortality-rate-of-an-ongoing-epidemic/446923)
