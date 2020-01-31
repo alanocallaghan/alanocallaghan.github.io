@@ -2,7 +2,9 @@
 title: About me
 permalink: /about/
 ---
+
 # About me
+![IGMM portrait](/assets/img/alan.jpg){: .portrait }
 
 I am a bioinformatician with some 
 experience in commercial consultancy who has moved on to pursue a PhD in
@@ -24,3 +26,7 @@ data analysis and visualisation, and presentation skills.
 
 Thanks for visiting my personal website. Please get in touch if you have any 
 questions.
+
+
+
+

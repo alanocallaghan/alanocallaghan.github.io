@@ -49,3 +49,14 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.portrait {
+    margin: 0 auto;
+    width: 50%;
+    display: block;
+}
