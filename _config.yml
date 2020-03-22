@@ -30,6 +30,9 @@ plugins:
   - jekyll-feed
 highlighter: rouge
 
+disqus:
+  shortname: residualinterests
+
 defaults:
   - 
     scope:
