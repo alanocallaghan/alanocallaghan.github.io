@@ -14,7 +14,7 @@ statistics and personal topics.
 - [{{p.title}}]({{p.url}})
 {% endif %}
 {% endfor %}
-
+- [*Curriculum vitae*]({{site.url}}/assets/cv.pdf)
 
 # Blog posts {%include RSS.html %}
 {% for post in site.posts %}
@@ -27,6 +27,7 @@ statistics and personal topics.
 - [heatmaplyExamples](https://alanocallaghan.github.io/heatmaplyExamples/): 
     *vignettes demonstrating the utility of 
     [heatmaply](https://github.com/talgalili/heatmaply) for various applications*
+
 - [plotlyvignettes](https://alanocallaghan.github.io/plotlyvignettes):
     *vignettes relating to my 
     [plotlyutils](https://github.com/Alanocallaghan/plotlyutils) 
