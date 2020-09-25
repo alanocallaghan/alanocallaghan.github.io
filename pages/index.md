@@ -24,11 +24,23 @@ statistics and personal topics.
 {% endfor %}
 
 # Package sites
-- [heatmaplyExamples](https://alanocallaghan.github.io/heatmaplyExamples/): 
+
+Here are some links to R packages I've written or contributed to:
+
+- [bayefdr](https://alanocallaghan.github.io/bayefdr/):  
+  *Bayesian estimation and optimisation of expected FDR and expected FNR*.
+
+- [agitated](https://alanocallaghan.github.io/agitated/):  
+  *A re-implementation of UpSet plots*.
+
+- [snifter](https://alanocallaghan.github.io/snifter/):  
+  *R wrapper for the python openTSNE library implementing fast interpolated t-SNE*.
+
+- [heatmaplyExamples](https://alanocallaghan.github.io/heatmaplyExamples/):  
     *vignettes demonstrating the utility of 
     [heatmaply](https://github.com/talgalili/heatmaply) for various applications*
 
-- [plotlyvignettes](https://alanocallaghan.github.io/plotlyvignettes):
+- [plotlyvignettes](https://alanocallaghan.github.io/plotlyvignettes):  
     *vignettes relating to my 
     [plotlyutils](https://github.com/Alanocallaghan/plotlyutils) 
     package. Was used as the basis for a talk at an 
