@@ -13,3 +13,6 @@ MDS = $(RMDS:.Rmd=.md)
 	R --no-save -e 'rmarkdown::render("$<")'
 
 all: $(MDS)
+
+serve: all
+	bundle exec jekyll serve
