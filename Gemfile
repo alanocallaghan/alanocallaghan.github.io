@@ -18,7 +18,7 @@ source "https://rubygems.org"
 
 ## temporary fix to make github stfu
 # gem "github-pages", group: :jekyll_plugins
-gem "github-pages", git: "https://github.com/github/pages-gem", ref: "hubot/kramdown-v2-3-1"
+gem "github-pages"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
