@@ -33,7 +33,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "kramdown", ">=2.3.1"
 
-gem "nokogiri", ">=1.11.2"
+gem "nokogiri", ">=1.13.6"
 
 gem "rouge"
 
