@@ -57,5 +57,6 @@ Here are some links to R packages I've written or contributed to:
       package. Was used as the basis for a talk at an 
       [Edinburgh Bioinformatics](http://www.bioinformatics.ed.ac.uk/) meeting
       (2018-11-08)*.
-  - [agitated](https://alanocallaghan.github.io/agitated/):  
-    *A re-implementation of UpSet plots*.
+      
+  <!-- - [agitated](https://alanocallaghan.github.io/agitated/):  
+    *A re-implementation of UpSet plots*. -->
