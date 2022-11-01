@@ -29,4 +29,4 @@ data analysis and visualisation, and presentation skills.
 Thanks for visiting my personal website. Please get in touch if you have any
 questions.
 
-You can also view [my CV](../assets/cv.pdf) if you so wish.
+You can also view [my CV](../assets/alan-ocallaghan-cv.pdf) if you so wish.
