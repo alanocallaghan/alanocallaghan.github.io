@@ -32,8 +32,8 @@ Here are some links to R packages I've written or contributed to:
   | Package | Description | Version | Downloads |
   |:--------|------------:|--------:|----------:|
   | [heatmaply](https://cran.r-project.org/web/packages/heatmaply/index.html) | *Interactive cluster heatmaps in R.* | [![CRAN status](https://www.r-pkg.org/badges/version/heatmaply)](https://CRAN.R-project.org/package=heatmaply)  | [![](https://cranlogs.r-pkg.org/badges/heatmaply)](https://cran.r-project.org/package=heatmaply) |
-  | [bayefdr](https://cran.r-project.org/web/packages/bayefdr/index.html) | *Bayesian estimation and optimisation of expected FDR and expected FNR*. | [![CRAN status](https://www.r-pkg.org/badges/version/bayefdr)](https://CRAN.R-project.org/package=bayefdr)  | [![](https://cranlogs.r-pkg.org/badges/bayefdr)](https://cran.r-project.org/package=bayefdr) |
   | [contrast](https://cran.r-project.org/web/packages/contrast/index.html) | *Contrasts for linear models in R.* | [![CRAN status](https://www.r-pkg.org/badges/version/contrast)](https://CRAN.R-project.org/package=contrast) | [![](https://cranlogs.r-pkg.org/badges/contrast)](https://cran.r-project.org/package=contrast) |
+  | [bayefdr](https://cran.r-project.org/web/packages/bayefdr/index.html) | *Bayesian estimation and optimisation of expected FDR and expected FNR*. | [![CRAN status](https://www.r-pkg.org/badges/version/bayefdr)](https://CRAN.R-project.org/package=bayefdr)  | [![](https://cranlogs.r-pkg.org/badges/bayefdr)](https://cran.r-project.org/package=bayefdr) |
 
 
 
