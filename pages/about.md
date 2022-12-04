@@ -16,8 +16,8 @@ with a particular focus on inference of variability and scalable inference.
 
 I am currently employed as a postdoctoral researcher with Elena Vigorito 
 and Chris Wallace at the MRC Biostatistics Unit, working again on scalable
-Bayesian inference, but also in this case on eQTL analysis for immune-mediated
-disease.
+Bayesian inference and RNAseq data, but also in this case on eQTL analysis 
+and cell type deconvolution for immune-mediated diseases.
 
 I am also interested in the R programming language and data visualisation,
 and have made contributions to a number of R packages, in particular those
