@@ -29,22 +29,22 @@ Here are some links to R packages I've written or contributed to:
 
 - CRAN packages:
 
-  | Package | Description | Badge |
-  |:--------|------------:|------:|
-  | [heatmaply](https://cran.r-project.org/web/packages/heatmaply/index.html) | *Interactive cluster heatmaps in R.* | [![CRAN status](https://www.r-pkg.org/badges/version/heatmaply)](https://CRAN.R-project.org/package=heatmaply)  |
-  | [bayefdr](https://cran.r-project.org/web/packages/bayefdr/index.html) | *Bayesian estimation and optimisation of expected FDR and expected FNR*. | [![CRAN status](https://www.r-pkg.org/badges/version/bayefdr)](https://CRAN.R-project.org/package=bayefdr)  |
-  | [contrast](https://cran.r-project.org/web/packages/contrast/index.html) | *Contrasts for linear models in R.* | [![CRAN status](https://www.r-pkg.org/badges/version/contrast)](https://CRAN.R-project.org/package=contrast)  
+  | Package | Description | Version | Downloads |
+  |:--------|------------:|--------:|----------:|
+  | [heatmaply](https://cran.r-project.org/web/packages/heatmaply/index.html) | *Interactive cluster heatmaps in R.* | [![CRAN status](https://www.r-pkg.org/badges/version/heatmaply)](https://CRAN.R-project.org/package=heatmaply)  | [![](https://cranlogs.r-pkg.org/badges/heatmaply)](https://cran.r-project.org/package=heatmaply) |
+  | [bayefdr](https://cran.r-project.org/web/packages/bayefdr/index.html) | *Bayesian estimation and optimisation of expected FDR and expected FNR*. | [![CRAN status](https://www.r-pkg.org/badges/version/bayefdr)](https://CRAN.R-project.org/package=bayefdr)  | [![](https://cranlogs.r-pkg.org/badges/bayefdr)](https://cran.r-project.org/package=bayefdr) |
+  | [contrast](https://cran.r-project.org/web/packages/contrast/index.html) | *Contrasts for linear models in R.* | [![CRAN status](https://www.r-pkg.org/badges/version/contrast)](https://CRAN.R-project.org/package=contrast) | [![](https://cranlogs.r-pkg.org/badges/contrast)](https://cran.r-project.org/package=contrast) |
 
 
 
 - Bioconductor:
 
-  | Package |Description | Devel | Release |
-  |:--------|-----------:|------:|---------|
-  | [snifter](https://github.com/Alanocallaghan/snifter) |*R wrapper for the python openTSNE library implementing fast interpolated t-SNE.* | [![](http://bioconductor.org/shields/build/devel/bioc/snifter.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/snifter) |[![](http://bioconductor.org/shields/build/release/bioc/snifter.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/snifter) |
-  | [densvis](https://github.com/Alanocallaghan/densvis) | *Density-preserving non-linear dimensionality reduction methods.* | [![](http://bioconductor.org/shields/build/devel/bioc/densvis.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/densvis) |[![](http://bioconductor.org/shields/build/release/bioc/densvis.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/densvis) |
-  | [scater](https://github.com/Alanocallaghan/scater) | *Single cell analysis toolkit.* | [![](http://bioconductor.org/shields/build/devel/bioc/scater.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/scater) |[![](http://bioconductor.org/shields/build/release/bioc/scater.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/scater) |
-  | [BASiCS](https://bioconductor.org/packages/devel/bioc/html/BASiCS.html) | *Bayesian model for analysis of single-cell sequencing data.* | [![](http://bioconductor.org/shields/build/devel/bioc/BASiCS.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/BASiCS) | [![](http://bioconductor.org/shields/build/release/bioc/BASiCS.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/BASiCS) |
+  | Package |Description | Devel | Release | Rank |
+  |:--------|-----------:|------:|--------:|-----:|
+  | [snifter](https://github.com/Alanocallaghan/snifter) |*R wrapper for the python openTSNE library implementing fast interpolated t-SNE.* | [![](http://bioconductor.org/shields/build/devel/bioc/snifter.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/snifter) |[![](http://bioconductor.org/shields/build/release/bioc/snifter.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/snifter) | [![](http://bioconductor.org/shields/downloads/release/snifter.svg)](http://bioconductor.org/packages/stats/bioc/snifter/) |
+  | [densvis](https://github.com/Alanocallaghan/densvis) | *Density-preserving non-linear dimensionality reduction methods.* | [![](http://bioconductor.org/shields/build/devel/bioc/densvis.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/densvis) |[![](http://bioconductor.org/shields/build/release/bioc/densvis.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/densvis) | [![](http://bioconductor.org/shields/downloads/release/densvis.svg)](http://bioconductor.org/packages/stats/bioc/densvis/) |
+  | [scater](https://github.com/Alanocallaghan/scater) | *Single cell analysis toolkit.* | [![](http://bioconductor.org/shields/build/devel/bioc/scater.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/scater) |[![](http://bioconductor.org/shields/build/release/bioc/scater.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/scater) | [![](http://bioconductor.org/shields/downloads/release/scater.svg)](http://bioconductor.org/packages/stats/bioc/scater/) |
+  | [BASiCS](https://bioconductor.org/packages/devel/bioc/html/BASiCS.html) | *Bayesian model for analysis of single-cell sequencing data.* | [![](http://bioconductor.org/shields/build/devel/bioc/BASiCS.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/BASiCS) | [![](http://bioconductor.org/shields/build/release/bioc/BASiCS.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/BASiCS) | [![](http://bioconductor.org/shields/downloads/release/BASiCS.svg)](http://bioconductor.org/packages/stats/bioc/BASiCS/) |
 
 
 - Misc:
