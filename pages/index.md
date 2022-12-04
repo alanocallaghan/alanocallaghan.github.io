@@ -65,7 +65,8 @@ Here are some links to R packages I've written or contributed to:
       (2018-11-08)*.
 
 - Teaching materials:  
-  I have also contributed to and maintain some teaching materials:  
+  I have also contributed to and maintain some teaching materials:
+  
   | Name | Website | Source |
   |:-----|:--------|:-------|
   |High dimensional statistics with R | [Carpentries Incubator](https://carpentries-incubator.github.io/high-dimensional-stats-r/) | [GitHub](https://github.com/carpentries-incubator/high-dimensional-stats-r/)
