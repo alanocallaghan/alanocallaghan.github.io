@@ -46,6 +46,16 @@ Here are some links to R packages I've written or contributed to:
   | [scater](https://github.com/Alanocallaghan/scater) | *Single cell analysis toolkit.* | [![](http://bioconductor.org/shields/build/devel/bioc/scater.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/scater) |[![](http://bioconductor.org/shields/build/release/bioc/scater.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/scater) |
   | [BASiCS](https://bioconductor.org/packages/devel/bioc/html/BASiCS.html) | *Bayesian model for analysis of single-cell sequencing data.* | [![](http://bioconductor.org/shields/build/devel/bioc/BASiCS.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/BASiCS) | [![](http://bioconductor.org/shields/build/release/bioc/BASiCS.svg)](http://bioconductor.org/checkResults/release/bioc-LATEST/BASiCS) |
 
+- Teaching materials:
+
+I have also contributed to and maintain some teaching materials:
+
+| Name | Website | Source |
+|:-----|:--------|:-------|
+|High dimensional statistics with R | [Carpentries Incubator](https://carpentries-incubator.github.io/high-dimensional-stats-r/) | [GitHub](https://github.com/carpentries-incubator/high-dimensional-stats-r/)
+|Orchestrating single cell analysis (landing) | [Bioconductor](http://bioconductor.org/books/release/OSCA/) | [GitHub](https://github.com/OSCA-source/OSCA/)
+|Orchestrating single cell analysis (multisample) | [Bioconductor](http://bioconductor.org/books/release/OSCA.multisample/) | [GitHub](https://github.com/OSCA-source/OSCA.multisample/)
+
 
 - Misc:
   - [heatmaplyExamples](https://alanocallaghan.github.io/heatmaplyExamples/):  
