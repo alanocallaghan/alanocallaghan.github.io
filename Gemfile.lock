@@ -214,6 +214,7 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.3.6)
+    mini_portile2 (2.8.8)
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
@@ -222,7 +223,8 @@ GEM
     mutex_m (0.2.0)
     net-http (0.4.1)
       uri
-    nokogiri (1.18.3-x86_64-linux-gnu)
+    nokogiri (1.18.3)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
     octokit (4.25.1)
       faraday (>= 1, < 3)
@@ -255,6 +257,7 @@ GEM
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
     uri (0.13.0)
+    webrick (1.9.1)
 
 PLATFORMS
   x86_64-linux
@@ -266,6 +269,7 @@ DEPENDENCIES
   minima
   nokogiri (>= 1.16.5)
   rouge
+  webrick
 
 BUNDLED WITH
    2.5.7

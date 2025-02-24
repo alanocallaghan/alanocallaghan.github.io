@@ -39,3 +39,4 @@ gem "rouge"
 
 gem "minima"
 
+gem "webrick"
