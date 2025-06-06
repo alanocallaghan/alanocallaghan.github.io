@@ -1,5 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 permalink: /
 ---
@@ -14,7 +13,7 @@ statistics and personal topics.
 - [{{p.title}}]({{p.url}})
 {% endif %}
 {% endfor %}
-- [*Curriculum vitae*]({{site.url}}/assets/cv.pdf)
+- [*Curriculum vitae*]({{site.url}}/assets/alanocallaghan-cv.pdf)
 
 # Blog posts {%include RSS.html %}
 {% for post in site.posts %}
@@ -73,7 +72,3 @@ Here are some links to R packages I've written or contributed to:
   |High dimensional statistics with R | [Carpentries Incubator](https://carpentries-incubator.github.io/high-dimensional-stats-r/) | [GitHub](https://github.com/carpentries-incubator/high-dimensional-stats-r/)
   |Orchestrating single cell analysis (landing) | [Bioconductor](http://bioconductor.org/books/release/OSCA/) | [GitHub](https://github.com/OSCA-source/OSCA/)
   |Orchestrating single cell analysis (multisample) | [Bioconductor](http://bioconductor.org/books/release/OSCA.multisample/) | [GitHub](https://github.com/OSCA-source/OSCA.multisample/)
-
-
-  <!-- - [agitated](https://alanocallaghan.github.io/agitated/):  
-    *A re-implementation of UpSet plots*. -->
