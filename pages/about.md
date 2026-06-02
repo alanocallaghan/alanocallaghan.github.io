@@ -7,19 +7,20 @@ permalink: /about/
 ![IGMM portrait](/assets/img/alan.jpg){: .portrait }
 
 
-I am a bioinformatician with some 
-experience as a service provider, who moved on to pursue a PhD in
+I am a research software engineer and bioinformatician. I completed a PhD in
 [Catalina Vallejos' group](https://vallejosgroup.github.io/) in the 
 [MRC Human Genetics Unit](https://www.ed.ac.uk/mrc-human-genetics-unit).
 My PhD related to Bayesian analysis of single cell RNA sequencing,
 with a particular focus on inference of variability and scalable inference.
+I then briefly worked as a postdoctoral researcher with Elena Vigorito 
+and Chris Wallace at the MRC Biostatistics Unit.
 
-I am currently employed as a postdoctoral researcher with Elena Vigorito 
-and Chris Wallace at the MRC Biostatistics Unit, working again on scalable
-Bayesian inference and RNAseq data, but also in this case on eQTL analysis 
-and cell type deconvolution for immune-mediated diseases.
+I now work as research software on [QuPath](https://qupath.github.io/) and
+related projects. This involves developing the core QuPath software and extensions,
+developing supporting software and infrastructure, developing machine learning models,
+and performing collaborative research projects using QuPath and related software.
 
-I am also interested in the R programming language and data visualisation,
+I have substantial experience in the R programming language and data visualisation,
 and have made contributions to a number of R packages, in particular those
 relating to visualisations and interactive graphics. I worked previously
 with [Fios Genomics](https://www.fiosgenomics.com/), and I was
