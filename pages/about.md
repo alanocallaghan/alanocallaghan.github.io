@@ -15,7 +15,7 @@ with a particular focus on inference of variability and scalable inference.
 I then briefly worked as a postdoctoral researcher with Elena Vigorito 
 and Chris Wallace at the MRC Biostatistics Unit.
 
-I now work as research software on [QuPath](https://qupath.github.io/) and
+I now work as research software engineer on [QuPath](https://qupath.github.io/) and
 related projects. This involves developing the core QuPath software and extensions,
 developing supporting software and infrastructure, developing machine learning models,
 and performing collaborative research projects using QuPath and related software.
