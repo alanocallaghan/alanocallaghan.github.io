@@ -54,15 +54,10 @@ Here are some links to R packages I've written or contributed to:
   - [plotlyutils](https://github.com/Alanocallaghan/plotlyutils):  
     Some functions for creating nice interactive plots using the plotly R and JS
     libraries.
-  - [nalar](https://github.com/Alanocallaghan/plotlyutils):  
-    A personal R library I use for common analysis tasks. May be published on
-    CRAN eventually.
   - [plotlyvignettes](https://alanocallaghan.github.io/plotlyvignettes):  
     Vignettes relating to my 
     [plotlyutils](https://github.com/Alanocallaghan/plotlyutils) 
-    package. Was used as the basis for a talk at an 
-    [Edinburgh Bioinformatics](http://www.bioinformatics.ed.ac.uk/) meeting
-    (2018-11-08).
+    package.
 
 - Teaching materials:  
   I have also contributed to and maintain some teaching materials:
